@@ -1,6 +1,3 @@
-from typing import Optional
-
-
 class Book:
     def __init__(self, id: int, name: str, pages: int):
         if not isinstance(id, int):
@@ -27,7 +24,7 @@ class Book:
 
 
 class Library:
-    def __init__(self, book_list: Optional[list[Book]] = None):
+    def __init__(self, book_list: list[Book] | None = None):
         if book_list is None:
             book_list = []
 
