@@ -141,4 +141,4 @@ class Circle(Shape):
         """
         :return: Возвращает 'официальное' строковое представление круга.
         """
-        return f"{self.__class__.__name__}(x_center={self.x_center!r}, y_center={self.y_center!r}, radius={self.radius})"
+        return f"{self.__class__.__name__}(x_center={self.x_center!r}, y_center={self.y_center!r}, radius={self.radius!r})"
