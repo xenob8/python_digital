@@ -43,6 +43,8 @@ class Shape(ABC):
     @x_center.setter
     def x_center(self, x_center: float):
         """
+        x_center имеет protected модификатор, чтобы обеспечить
+        правильность изменения этого атрибута (проверка типа) + доступ в наследнике
         :param x_center: Устанавливает X-координату центра фигуры
         :raise TypeError: если тип аргументов неверный выбрасываем TypeError
         """
@@ -53,6 +55,8 @@ class Shape(ABC):
     @y_center.setter
     def y_center(self, y_center: float):
         """
+        y_center имеет protected модификатор, чтобы обеспечить
+        правильность изменения этого атрибута (проверка типа) + доступ в наследнике
         :param y_center: Устанавливает Y-координату центра фигуры
         :raise TypeError: если тип аргументов неверный выбрасываем TypeError
         """
